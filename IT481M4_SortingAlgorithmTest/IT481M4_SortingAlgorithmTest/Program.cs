@@ -9,6 +9,7 @@ namespace SortingTest
         {
             //////////////////////////////////////////////////////
             ///IT481M4 Algorithms for Analysis and Optimization///
+            //////////////////V1 Bubble Sort//////////////////////
             //////////////////////////////////////////////////////
 
             ///Note: The term Bubble Sort was first used in 1962 by Iverson and is also known as Exchange Sorting. Complexity = O(n^2) http://www.iiitdm.ac.in/old/Faculty_Teaching/Sadagopan/pdf/DAA/SortingAlgorithms.pdf
@@ -29,7 +30,7 @@ namespace SortingTest
             int[] lrgDataSet = DataSets.lrgDataSet;
             var executionTimeLrg = System.Diagnostics.Stopwatch.StartNew();
             BubbleSort(lrgDataSet);
-            executionTimeSmall.Stop();
+            executionTimeLrg.Stop();
 
             //Print Results
             Console.ForegroundColor = ConsoleColor.Cyan;
