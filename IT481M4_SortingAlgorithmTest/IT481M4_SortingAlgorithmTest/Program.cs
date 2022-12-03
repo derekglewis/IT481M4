@@ -11,6 +11,8 @@ namespace SortingTest
             ///IT481M4 Algorithms for Analysis and Optimization///
             //////////////////////////////////////////////////////
 
+            ///Note: The term Bubble Sort was first used in 1962 by Iverson and is also known as Exchange Sorting. Complexity = O(n^2) http://www.iiitdm.ac.in/old/Faculty_Teaching/Sadagopan/pdf/DAA/SortingAlgorithms.pdf
+
             //Bubble Sort Execution Time for Small Data Set
             int[] smallDataSet = DataSets.smallDataSet;
             var executionTimeSmall = System.Diagnostics.Stopwatch.StartNew();
