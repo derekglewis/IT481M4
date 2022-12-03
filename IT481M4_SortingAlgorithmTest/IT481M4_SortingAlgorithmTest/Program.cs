@@ -12,7 +12,7 @@ namespace SortingTest
             //////////////////V1 Bubble Sort//////////////////////
             //////////////////////////////////////////////////////
 
-            ///Note: The term Bubble Sort was first used in 1962 by Iverson and is also known as Exchange Sorting. Complexity = O(n^2) http://www.iiitdm.ac.in/old/Faculty_Teaching/Sadagopan/pdf/DAA/SortingAlgorithms.pdf
+            ///Note: The term Bubble Sort was first used in 1962 by Iverson and is also known as Exchange Sorting. Average Complexity = O(n^2) http://www.iiitdm.ac.in/old/Faculty_Teaching/Sadagopan/pdf/DAA/SortingAlgorithms.pdf
 
             //Bubble Sort Execution Time for Small Data Set
             int[] smallDataSet = DataSets.smallDataSet;
@@ -36,12 +36,12 @@ namespace SortingTest
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("###################################\n" +
                 "### Bubble Sort Testing Results ###\n" +
-                "### Elapsed Time in Milliseconds ##\n" +
+                "###### Elapsed Time in Ticks ######\n" +
                 "###################################");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("{0,-5} {1,2}", "Small Data Set:", executionTimeSmall.ElapsedMilliseconds);
-            Console.WriteLine("{0,-5} {1,0}", "Medium Data Set:", executionTimeMed.ElapsedMilliseconds);
-            Console.WriteLine("{0,-5} {1,4}", "Large Data Set:", executionTimeLrg.ElapsedMilliseconds);
+            Console.WriteLine("{0,-5} {1,7}", "Small Data Set:", executionTimeSmall.ElapsedTicks);
+            Console.WriteLine("{0,-5} {1,0}", "Medium Data Set:", executionTimeMed.ElapsedTicks);
+            Console.WriteLine("{0,-5} {1,10}", "Large Data Set:", executionTimeLrg.ElapsedTicks);
             Console.ResetColor();
 
         }
